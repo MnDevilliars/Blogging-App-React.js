@@ -27,7 +27,7 @@ function Home() {
                 <Container>
                     <div className='flex flex-wrap justify-center items-center'>
                         <div className='flex flex-col gap-3 items-center justify-center text-center my-8'>
-                            <h1 className='text-2xl font-bold text-[#964734] duration-200 hover:text-[#afdde5]'>
+                            <h1 className='text-2xl font-bold text-[#964734] duration-200 hover:text-[#afdde5] cursor-pointer'>
                                 &#128577; Oops !!! no post available
                             </h1>
                             <Loader />
@@ -43,17 +43,25 @@ function Home() {
             <div className='w-full flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-yellow-800'>
                 <Container>
                     <div className='flex flex-col gap-3 items-center justify-center text-center my-8'>
-                        <h1 className='text-2xl font-bold transition duration-300 text-[#afdde5] hover:text-[#ffdcd3]'>
+                        <h1 className='text-2xl font-bold transition duration-300 text-[#afdde5] hover:text-[#ffdcd3] cursor-pointer'>
                             Login to read posts
                         </h1>
                         <Loader />
 
-                        <button 
-                        className='bg-gray-400 py-2 w-[120px] rounded-lg duration-300 hover:bg-gray-500 text-black/90 font-bold text-[17px] px-3'
-                        onClick={() => navigate("/login")}
-                        >
-                            Login
-                        </button>
+                        <div className='flex justify-center items-center gap-4'>
+                            <button
+                                className='bg-gray-400 py-2 px-9 md:px-10 rounded-lg duration-300 hover:text-white hover:bg-gray-500 text-black/90 font-bold text-[18px]'
+                                onClick={() => navigate("/login")}
+                            >
+                                Login
+                            </button>
+                            <button
+                                className='bg-gray-400 py-2 px-4 md:px-5 rounded-lg duration-300 hover:text-white hover:bg-gray-500 text-black/90 font-bold text-[18px]'
+                                onClick={() => navigate("/signup")}
+                            >
+                                Register Now
+                            </button>
+                        </div>
 
                     </div>
                 </Container>
