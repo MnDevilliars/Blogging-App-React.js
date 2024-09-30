@@ -54,7 +54,7 @@ function Home() {
 
                         <div className='flex justify-center items-center gap-4'>
                             <button
-                                className='bg-gray-400 py-2 px-9 md:px-10 rounded-lg duration-300 hover:text-white hover:bg-gray-500 text-black/90 font-bold text-[18px]'
+                                className='bg-gray-400 py-2 px-8 md:px-9 rounded-lg duration-300 hover:text-white hover:bg-gray-500 text-black/90 font-bold text-[18px]'
                                 onClick={() => navigate("/login")}
                             >
                                 Login
