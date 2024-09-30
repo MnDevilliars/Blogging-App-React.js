@@ -41,9 +41,13 @@ function Home() {
     if (!authStatus) {
         return (
             <div className='w-full flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-yellow-800'>
-                <Container>
-                    <div className='flex flex-col gap-3 items-center justify-center text-center my-8'>
-                        <h1 className='text-2xl font-bold transition duration-300 text-[#afdde5] hover:text-[#ffdcd3] cursor-pointer'>
+                <Container className='flex justify-center items-center'>
+                    <div className='flex flex-col gap-3 items-center md:w-1/2 justify-center text-center my-8'>
+                        <section className='px-5 sm:px-5 mb-4 md:mb-8'>
+                            <h1 className='text-[#afdde5] text-2xl font-bold mb-3 md:text-3xl duration-300'>Welcome to Story Nest</h1>
+                            <p className='text-white text-[16px]'>Discover insightful <b>stories, expert opinions, and discussions from our community of passionate writers.</b> Join us to share your own voice, engage with others, and explore content that matters to you.</p>
+                        </section>
+                        <h1 className='text-xl font-bold transition duration-300 text-[#afdde5] hover:text-[#ffdcd3] cursor-pointer'>
                             Login to read posts
                         </h1>
                         <Loader />
